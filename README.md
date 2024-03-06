@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Sager Drone Tracing System
 
-## Getting Started
+![Project Logo](https://sagerdrone.com/frontend/img/sager_log.svg)
 
-First, run the development server:
+Sager Drones in a Next TS application that shows a list of drones on the map and traces the path of each drone.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Table of Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Overview](#overview)
+- [Features](#features)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Credits](#credits)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Sager Drone Tracing System is a web application designed to display live drone activity in a given space.
+It provides real-time tracking of drones and classifies them based on their registration number.
+The system utilizes a front-end developed using ReactJS/NextJS, communicates with the backend via WebSocket, and implements the map using Mapbox.
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- Displays live drone activity on a map interface.
+- Classifies drones as allowed to fly (green) or not (red) based on their registration number.
+- Shows the path of each drone from the time of opening the page.
+- Hovering over a drone displays a popup with flight time and altitude information.
+- Dashboard section for entertainment.
+- The counter in the bottom right displays the number of red drones.
+- Clicking on a drone in the list moves the map to that drone.
+- Clicking on a drone on the map highlights it in the list.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Setup Instructions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Clone the repository from GitHub.
+- Install dependencies using Yarn: `yarn install`.
+- Run the application: `yarn dev`.
 
-## Deploy on Vercel
+## Usage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Open the application in a web browser.
+- Explore live drone activity displayed on the map route (from the side menu).
+- Interact with drones by hovering over them, clicking on them, or using the drone list.
+- Have fun with the dashboard page numbers game.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Credits
+
+- [ReactJS](https://reactjs.org/)
+- [NextJS](https://nextjs.org/)
+- [Mapbox](https://www.mapbox.com/)
+- [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)
+- [Particles](https://particles.js.org/)
